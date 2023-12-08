@@ -1,0 +1,35 @@
+{
+   "version": "2.0.0",
+   "tasks": [
+      {
+         "label": "Serve",
+         "type": "shell",
+         "command": "serve",
+         "problemMatcher": [],
+      },
+   ],
+   "inputs": [
+      {
+         "id": "TargetFolder",
+         "description": "Target Folder?",
+         "type": "pickString",
+         "options": [
+            "root",
+            "dist",
+            "public"
+         ],
+         "default": "root",
+      },
+      {
+         "id": "PortNum",
+         "description": "Port number?",
+         "type": "pickString",
+         "options": [
+            "80",
+            "8080",
+            "9001"
+         ],
+         "default": "80",
+      },
+   ]
+}
